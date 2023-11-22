@@ -82,11 +82,27 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .center-text {
   text-align: center; }
 
-.mb-8 {
+.mb-big {
   margin-bottom: 8rem; }
+
+.mb-medium {
+  margin-bottom: 4rem; }
+
+.mb-small {
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -97,6 +113,13 @@ body {
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-0.1rem);
@@ -114,13 +137,6 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
-
 .btn--white {
   background-color: #fff;
   color: #777; }
@@ -131,8 +147,27 @@ body {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  font-size: 1.6rem;
+  transition: all 0.2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .row {
-  max-width: 114rem;
+  max-width: 104rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
