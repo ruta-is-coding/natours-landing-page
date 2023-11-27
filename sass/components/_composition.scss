@@ -3,7 +3,7 @@
   &__photo {
     width: 55%;
     box-shadow: $shadow-lg-darker;
-    border-radius: 2px;
+    border-radius: $border-rounded;
     position: absolute;
     z-index: 10;
     transition: all 0.2s, border-radius 1ms;
