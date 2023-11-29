@@ -11,6 +11,7 @@ $color-tertiary-dark: #5643fa;
 
 $color-grey-dark: #777;
 $color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 $color-white: #fff;
@@ -27,6 +28,7 @@ $gutter-horizontal: 6rem;
 //SHADOWS
 $shadow-sm: 0 0.5rem 1rem rgba($color-black, 0.15);
 $shadow-md: 0 1rem 2rem rgba($color-black, 0.2);
+$shadow-md-darker: 0 1rem 2rem rgba($color-black, 0.4);
 $shadow-lg: 0 1.5rem 4rem rgba($color-black, 0.15);
 $shadow-lg-darker: 0 1.5rem 4rem rgba($color-black, 0.4);
 $shadow-xl: 0 2.5rem 4rem rgba($color-black, 0.5);
