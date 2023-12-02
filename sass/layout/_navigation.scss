@@ -12,6 +12,7 @@
     top: 6rem;
     right: 6rem;
     z-index: 200;
+    box-shadow: $shadow-md;
   }
 
   &__background {
@@ -26,23 +27,25 @@
       $color-primary-light,
       $color-primary-dark
     );
-
-    transform: scale(80);
+    transition: transform 0.7s cubic-bezier(0.8, 0, 0.07, 1);
   }
 
   &__nav {
+    opacity: 0;
+    width: 0;
     height: 100vh;
-    width: 100vw;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 150;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &__list {
     @include centerAbsolute;
     list-style-type: none;
     text-align: center;
+    width: 100%;
   }
 
   &__item {
@@ -80,5 +83,14 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 100;
+    width: 100vw;
   }
 }
